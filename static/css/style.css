@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+body {
+    margin: 8px;
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+    border-radius: 5px;
+}
+
+.top {
+    display: flex;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.menu button {
+    height: 48px;
+    width: 48px;
+    border: 0px;
+    padding: 12px;
+    margin: -12px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.menu button img {
+    width: 24px;
+    height: 24px;
+}
+
+.brandNameLogo {
+    display: flex;
+    gap: 10px;
+    margin: 0 15px;
+    font-size: 22px;
+    color: gray;
+}
+
+/* .brandNameLogo h3{
+    margin: 0 10px;
+    color: rgb(125, 122, 122);
+} */
+.brandNameLogo img {
+    width: 28px;
+    height: 28px;
+    border-radius: 10px;
+}
+
+.addSubjectBtn button {
+    height: 48px;
+    width: 48px;
+    border: 0px;
+    padding: 12px;
+    margin: -12px 30px;
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    left: 85vw;
+}
+
+.addSubjectBtn svg {
+    height: 24px;
+    width: 24px;
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    width: 25vw;
+    border: 2px solid;
+    align-items: center;
+    justify-content: center;
+    align-content: start;
+}
+
+.classHeader {
+    border-top: 3px solid grey;
+    border-bottom: 3px solid grey;
+    ;
+    display: flex;
+    padding: 5px;
+    margin: 10px 10px;
+}
+
+.classHeader h2 {
+    padding: 3px 10px;
+}
+
+.classHeader img {
+    height: 37px;
+    width: 37px;
+}
+
+.classContainer {
+    height: 70vh;
+    overflow-y: scroll;
+    margin: 3px;
+    padding: 12px 0px 0px 24px;
+    align-content: space-between;
+}
+
+.classCard {
+    border: 1px solid gray;
+    margin: 0px 24px 24px 0px;
+    padding: 5px 10px;
+    display: flex;
+    overflow: auto;
+    border-radius: 8px;
+}
+
+.classImg img {
+    height: 50px;
+    width: 50px;
+    padding: 5px 10px 0px 0px;
+
+}
+
+.settings {
+    display: flex;
+    padding: 20px 28px;
+}
+
+.settings svg {
+    height: 28px;
+    width: 28px;
+}
+
+.settings h3 {
+    padding: 3px 10px;
+}
+
+.right {
+    width: 75vw;
+    border: 2px solid
+}
+
+.header {
+    display: flex;
+    /* font-size: 30px; */
+    /* border-bottom: 2px solid black; */
+    justify-content: center;
+    text-align: center;
+}
+
+.assignmentSection {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    border-right: 1px solid black;
+}
+
+.assignmentSection img {
+    height: 38px;
+    width: 38px;
+    margin: 5px 0px 0px 0px;
+}
+
+.resourceSection {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 5px;
+    border-right: 1px solid black;
+}
+
+.resourceSection img {
+    height: 38px;
+    width: 38px;
+    margin: 5px 0px 0px 0px;
+}
+
+.addResourceBtn button {
+    height: 48px;
+    width: 48px;
+    border: 0px;
+    /* padding: 12px; */
+    margin: 0px 30px;
+    border-radius: 30px;
+    background-color: white;
+    /* position: absolute; */
+    /* left: 85vw; */
+}
+
+.addResourceBtn img {
+    height: 38px;
+    width: 38px;
+}
+
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+    overflow-y: scroll;
+    margin: 3px;
+    padding: 24px 0px 0px 24px;
+    border-top: 2px solid black;
+    align-content: space-between;
+}
+
+.card {
+    display: flex;
+    border: 1px solid gray;
+    margin: 0px 24px 24px 0px;
+    width: 45%;
+    border-radius: 15px;
+}
+
+.fileicon img {
+    width: 70px;
+    height: 70px;
+}
+
+.info {
+    /* font-size: 12px; */
+    margin: 5px;
+    padding: 5px;
+}
