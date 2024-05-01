@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UEP</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/teacher_dashboard_style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/utility.css') }}">
+</head>
+
+<body>
+    <div class="top">
+        <div class="menu">
+            <button><img src="{{ url_for('static', filename='img/menu.svg') }}" alt="Menu">
+            </button>
+        </div>
+        <div class="brandNameLogo">
+            <!-- <img src="logo.png"> -->
+            <a href="/"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo"></a>
+            Unified Educational Platform
+            <!-- <h3>Unified Educational Platform</h3> -->
+        </div>
+    </div>
+    <div class="container">
+        <div class="left">
+            <div class="classHeader">
+                <img src="{{ url_for('static', filename='img/classlogo.svg') }}" alt="Class Logo">
+                <h2>Class</h2>
+                <button id="addBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                        <path d="M4 12H20M12 4V20" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+            {% block classContainer %}
+                
+            {% endblock classContainer %}
+            <div class="settings">
+                <img src="{{ url_for('static', filename='img/settings.svg') }}" alt="Book">
+                <h3>
+                    Settings
+                </h3>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header">
+                <div class="resourceSection">
+                    <!-- <img src="resource.svg"> -->
+                    <img src="{{ url_for('static', filename='img/resource.svg') }}" alt="Resource">
+                    <h1>Resources</h1>
+                </div>
+                <div class="assignmentSection">
+                    <!-- <img src="assignment.svg"> -->
+                    <img src="{{ url_for('static', filename='img/assignment.svg') }}" alt="Assignment">
+                    <h1>Assignments</h1>
+                </div>
+                <div class="addResourceBtn">
+                    <button onclick="uploadFile()">
+                        <img src="{{ url_for('static', filename='img/upload.svg') }}" alt="Assignment">
+                    </button>
+                </div>
+            </div>
+
+            {% block contentContainer %}
+                
+            {% endblock contentContainer %}
+        </div>
+    </div>
+
+
+    
+    {% block createCourse %}
+
+    {% endblock createCourse %}
+    <!-- <script src="{{ url_for('static', filename='js/teacher_dashboard_script_v2.js') }}"></script> -->
+
+</body>
+
+</html>

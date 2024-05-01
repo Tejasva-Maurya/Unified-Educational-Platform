@@ -1,0 +1,46 @@
+{% extends "dashboard_base.html" %}
+
+{% block classContainer %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/student_dashboard_style.css') }}">
+            <div class="classContainer" id = "classContainer">
+                    <script>
+                        const BASE_URL = "{{ url_for('static', filename='') }}";
+                    </script>  
+            </div>
+        <!-- <script src="{{ url_for('static', filename='js/teacher_dashboard_class_container.js') }}"></script> -->
+{% endblock classContainer %}
+
+{% block contentContainer %}
+            <div  id = "cardContainer">
+
+            </div>
+    <script src="{{ url_for('static', filename='js/student_dashboard_class_container_v5.js') }}"></script>
+
+{% endblock contentContainer %}
+
+
+
+{% block createCourse %}
+        
+<div class="addclassform hidden" id="addclassform">
+    <div class="form">
+        <div class="addClassFormHeader">
+            <h2>Add Class</h2>
+            <button id="cross" class="cross"><img src="{{ url_for('static', filename='img/cross(cancel).svg') }}"></button>
+        </div>
+        <form id="addClassForm">
+            <div id="registerFields">
+                <label for="course_name">Course:</label>
+                <input type="text" id="course_name" name="course_name" required>
+                <label for="course_id">Course ID:</label>
+                <input type="text" id="course_id" name="course_id" required>
+                <label for="group_id">Group ID:</label>
+                <input type="text" id="group_id" name="group_id" required>
+            </div>
+            <button type="button" id="cancel" class="addClassbtn">Cancel</button>
+            <button type="submit" class="submit addClassbtn">Add</button>
+        </form>
+    </div>        
+</div>
+<script src="{{ url_for('static', filename='js/student_dashboard_script.js') }}"></script>
+    {% endblock createCourse %}
